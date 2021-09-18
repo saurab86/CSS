@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            height: 50vh;
+            display: flex;
+            text-align: center;
+            flex-direction: row; 
+            flex-wrap: wrap;
+            /* flex-wrap:   can be nowrap or wrap-reverse also; */
+            /* flex-direction: row;  default flex direction*/
+            /* flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse; */
+            justify-content: center;
+            /* Justify content 'center'place the container items into center horizontally */
+            align-items: center;
+            /* align items: center  place the items of container into center vertically POV*/
+        }
+        .box1 {
+            height: 234px;
+            width: 345px;
+            background-color: blue;
+            border-radius: 20px;
+            /* flex-grow: 3; */
+        }
+
+        .box2 {
+            height: 234px;
+            width: 345px;
+            background-color: red;
+            border-radius: 20px;
+        }
+        .box3
+        {   
+            height: 234px;
+            width: 345px;
+            background-color: purple;
+            border-radius: 20px;
+        }
+        .box4{
+            height: 234px;
+            width: 345px;
+            background-color: burlywood;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+
+</body>
+
+</html>

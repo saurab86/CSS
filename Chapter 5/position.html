@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: cornflowerblue;
+            color: white;
+            height: 70px;
+            /* z-index: 0; */
+        }
+        li{
+            display: inline;
+            list-style: circle;
+        }
+        p{
+            text-align: center  ;
+        }
+        .container{
+            background-color: cyan;
+            height: 50vh;
+            /* z-index:1 */
+            /* class which have high z-index will be positioned first */
+        }
+        .box{
+            background-color: white;
+            height: 200px;
+            width: 50vw;
+            position: relative;
+            /* after giving postion relative we can modify the position from top,right,bottom,left and z-index as given below*/
+            top:80px;
+            bottom: 4px;
+            left: 40px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum expedita voluptas id.</p>
+        <div class="box">This is a box content inside container</div>
+    </div>
+</body>
+</html>

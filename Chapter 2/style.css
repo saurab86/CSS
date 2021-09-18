@@ -1,0 +1,15 @@
+*{
+    margin: 10;
+    padding: 10;
+}
+
+.purple{
+    background-color: purple;   
+    color: white;
+
+}
+
+.green{
+    background-color: lightgreen;
+    color: white;
+}

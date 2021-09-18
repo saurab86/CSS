@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts and Display</title>
+    <style>
+        .box1{
+            display: inline;
+            height: 120px;
+            margin: 20px;
+            /* height and width is not in effect beacause of display:inline that cover the area of the content inside the box */
+            /* margin & padding works only on left and right if display: inline is used */
+            background-color: red;
+            color: white;
+           
+
+        }
+        .box2{
+            display: inline;
+            background-color: blue;
+            color: white;
+        }
+        .box3{
+            background-color: bisque;
+            color: rgb(53, 49, 49);
+            width: 120px;
+            height: 120px;
+            margin: 4px;
+            padding:4px;
+            display: inline-block;
+            /* height,width,margin and padding is effective while using display:inline-block */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">This is box 1 content</div>
+    <div class="box2">This is box 2 content</div>
+    <div class="box3">This is box 3</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+#firstid{
+    background-color: aqua;
+}
+.bg-blue{
+    background-color: blue;
+    color: white;
+}
+
+.one{
+    background-color: burlywood;
+    color: white;
+}
+
+.headphoneimg{
+    filter: blur(1.5px);
+}
