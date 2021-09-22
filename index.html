@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            background-color: yellow;
+            display: grid;
+            grid-row-gap: 20px;
+            grid-column-gap: 50px;
+            grid-template-columns: auto auto auto;
+            /* grid-row:  2 / span 2 */
+            /* if we wite two auto, it will provide 2 columns in one row,by default it is one */
+            /* also we can set grid-template-colum as 45px auto auto or 45px 85px auto */
+            grid-template-rows: 45px 35px auto;
+            /* justify-content: center; */
+        }
+        .item{
+            background-color: aquamarine;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+</div>
+</html>
