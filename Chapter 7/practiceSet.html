@@ -6,13 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         ul{
-            display: -ms-inline-grid;
+            display: inline-grid;
+            grid-template-columns: auto auto;
+        }
+        ul li{
+            list-style: none;
+            margin: 0 23px;
+            padding: 23px 0;
+        }
+        header{
+            background-color: black;
+            color:white;
         }
     </style>
 </head>
 <body>
-    <h1>This is test Html</h1>
     <header>
         <nav>
             <ul>
