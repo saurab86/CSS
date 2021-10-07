@@ -4,33 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transition</title>
+    <title>Document</title>
     <style>
         .container{
-            background-color: beige;
-            height: 50vh;
+            background-color: red;
+            height: 146px;
         }
-        .box1{
+        .box{
             border: 2px solid black;
-            transform: translate(54px, 60px)  
-            /* rotate(45deg); */ 
-            /* translate le horizontal forward padding gardincha ani horizontal scroll bar pani dekhaucha */
-            /* transform-origin: 0;   by default center bata rotate huncha */
-
+            display: inline-block;
+            /* transform: translate(134px, 56px) rotateX(45deg); */
+            /* transform-origin: 0;  */
+            /* transform: scale(4, 7); */
             /* transform: scaleX(8); */
-            /* transform: scaleY(8) */
-               
-            /* *******SYNTAX OF MATRIX */
-            /* transform: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translatey() ); */
+            /* transform: scaleY(8); */
+            /* transform: skew(10deg, 10deg); */ 
         }
+        img{
+            width: 146px;
+            height: 455px;
+            /* transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 3s; */
+            transition: width 1s ease-in-out, height 4s ease-in;
+        } 
     </style>
+  
 </head>
 <body>
     <div class="container">
-        <div class="box1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, accusamus! Laudantium praesentium ea ipsum aliquam quaerat placeat sequi laborum sed? Distinctio assumenda blanditiis tenetur?</div>
-        <div class="box2"></div>
-        <div class="box3"></div>
+        <div class="box">
+            <img id="myImage" src="https://source.unsplash.com/960x520/?nature,water">
+            <button id="btn">Toggle</button>
         </div>
+         
     </div>
 </body>
+<script>
+    myImage.style.width = '146px';
+    myImage.style.height = '16px';
+
+    btn.addEventListener("click", ()=>{
+        myImage.style.height = '456px';
+        if(myImage.style.width === '546px'){
+            myImage.style.width = "146px";
+        }
+        else if(myImage.style.width === '146px'){
+            myImage.style.width = "546px";
+        } 
+    })
+</script>
 </html>
