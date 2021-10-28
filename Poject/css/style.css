@@ -88,13 +88,20 @@ nav ul li a:hover{
 
 .card{
     max-width: 90vw;
-    margin: auto;
+    margin:37px auto;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    /* justify-content: center; */
 }
 
 .card-item{
     display: inline-flex;
     justify-content: center;
     flex-direction: column;
+    margin: 0px 12px;
 }
 
 .card h2{
